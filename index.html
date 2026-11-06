@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>DIWALI DHAMAKA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" class="hidden">
+  <span>⭐ <b id="score">0</b></span>
+  <span id="combo"></span>
+  <span>⏱ <b id="time">45</b></span>
+</div>
+
+<div id="menu" class="panel">
+  <h1>शुभ दीपावली</h1>
+  <p id="greet">Happy Diwali!</p>
+  <input id="name" type="text" maxlength="16" placeholder="Apna naam likho" autocomplete="off">
+  <div id="diyas">
+    <button class="diya">🪔</button>
+    <button class="diya">🪔</button>
+    <button class="diya">🪔</button>
+    <button class="diya">🪔</button>
+    <button class="diya">🪔</button>
+  </div>
+  <small>Diya jalane ke liye tap karo. Sab jala do to dhamaka hoga!</small>
+  <button id="start" class="btn">PATAKHA POP START 🧨</button>
+  <small>Best: <b id="hi">0</b></small>
+</div>
+
+<div id="over" class="panel hidden">
+  <h2>Time Up!</h2>
+  <p>Score: <b id="fscore">0</b></p>
+  <p id="fmsg"></p>
+  <p>Best: <b id="fhi">0</b></p>
+  <button id="again" class="btn">PHIR SE KHELO 🎆</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
+
